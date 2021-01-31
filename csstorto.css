@@ -1,0 +1,137 @@
+/* css-reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* ========================================================================= */
+:root{
+	--background: #252620;
+	--button: #C4C4C4;
+	--button-border: rgb(109, 100, 100);
+	--button-different:#7B886B;
+	--letters: #000000;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FIM CSS RESET */
+
+/* Paleta de cores:
+A0ECD0
+94DDBC
+88BB92
+7B886B
+714955 */
+
+body{
+	background-color: var(--background);
+}
+
+/* ===== CONTAINERS & SPACING ===== */
+#calculator-container{
+	width: 50%;
+	margin: auto;
+	margin-top: 200px;
+}
+
+#calculator-display-container{
+	width: 80%;
+	margin:auto;
+}
+
+#calculator-buttons-container{
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#calculator-buttons-container #calculator{
+	margin: auto;
+}
+
+/* ========================== */
+
+#result-display{
+	background-color: var(--button);
+	font-size: 3em;
+	text-align: right;
+	border-radius: 10px;
+	padding: 5px;
+	padding-right: 10px;
+}
+
+.calculator-buttons-row{
+	display:block;
+	width:fit-content;
+}
+
+#calculator-buttons-container td{
+	display:inline-block;
+	background-color: var(--button);
+	color:var(--letters);
+	text-align: center;
+	font-size: 3em;
+	margin: 10px;
+	border: 2px solid var(--button-border);
+	border-radius: 50%;
+	padding: 10px;
+	width:1em;
+}
+
+#calculator-buttons-container .different{
+	background-color: var(--button-different);
+}
+
+#result-button{
+	background-color: var(--button-different);
+	font-size: 3em;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 10px;
+	width: 49%;
+}
