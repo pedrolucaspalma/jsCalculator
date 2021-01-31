@@ -1,0 +1,131 @@
+/* css-reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FIM CSS RESET */
+
+/* ========================================================================= */
+
+:root{
+	--background: #252620;
+	--button: #C4C4C4;
+	--button-border: rgb(109, 100, 100);
+	--button-different:#7B886B;
+    --letters: #000000;
+    
+    --button-spacing: 12px;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--letters);
+}
+
+/* ====== CONTAINERS & SPACING ======*/
+
+#calculator-container{
+    width:40%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 30px;
+    height:500px;
+}
+
+#calculator-display-container{
+
+}
+
+#calculator-buttons-container{
+    width: fit-content;
+    margin: auto;
+}
+
+.calculator-buttons-row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: var(--button-spacing);
+    margin-bottom: var(--button-spacing);
+}
+
+/* ======================================== */
+
+#result-display{
+    background-color: var(--button);
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 15px;
+
+    font-size: 3em;
+    text-align: right;
+}
+
+.button{
+    background-color: var(--button);
+    margin-right: var(--button-spacing);
+    margin-left: var(--button-spacing);
+    border-radius: 50%;
+    width: 50px;
+
+    font-size: 3em;
+    text-align: center;
+}
+
+.button.different{
+    background-color: var(--button-different);
+}
+
+.button.result{
+    background-color: var(--button-different);
+    border-radius: 15px;
+    width: 40%;
+}
